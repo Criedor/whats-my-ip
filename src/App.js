@@ -9,8 +9,7 @@ class App extends React.Component {
       this.state = {IP: "", city: "", region: "", country: "", lat:"", lng: "" };
   }
 
-getIP() {
- 
+getIP() { 
   fetch("https://geo.ipify.org/api/v1?apiKey=at_RZgqfIVVenVQTzIL1IkcW5RmkBkhu")
     .then(response => response.json())
     .then(result => this.setState({IP: result.ip, country: result.location.country, city: result.location.city, region: result.location.region, lat: result.location.lat, lng: result.location.lng}))
