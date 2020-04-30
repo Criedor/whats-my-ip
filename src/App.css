@@ -1,38 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  background: darkgray;
+  color: white;
+  padding: 0 30px;
+}
+
+p {
+  color: black;
+  font-weight: 500;
+  font-size: 18pt;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.map-container {
+  width: 800px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.leaflet-container {
+  width: 100%;
+  height: 400px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.countryflag img {
+  width: 200px;
+  height: auto;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  margin: 40px;
+  padding: 10px;
+  font-size: 15pt;
+  font-weight: 700;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 5px;
 }
